@@ -1,6 +1,5 @@
 import java.util.Scanner;
 public class Main {
-    public class Principal {
     public static Rectangulo rectanguloSobre(Rectangulo r1, Rectangulo r2) {
         double minX = Math.max(Math.min(r1.getEsquina1().getX(), r1.getEsquina2().getX()),
             Math.min(r2.getEsquina1().getX(), r2.getEsquina2().getX()));
