@@ -23,9 +23,9 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         Coordenada e1= leerCoordenada(sc,"Ingrese una esquina del 1er rectangulo:");
-        Coordenada e2= leerCoordenada(sc, "Ingrese la esquina opuesta del 1er rectángulo:");
-        Coordenada e3= leerCoordenada(sc,"Ingrese una esquina del 2do rectángulo:");
-        Coordenada e4= leerCoordenada(sc, "Ingrese la esquina opuesta del 2do rectángulo:");
+        Coordenada e2= leerCoordenada(sc, "Ingrese la esquina opuesta del 1er rectangulo:");
+        Coordenada e3= leerCoordenada(sc,"Ingrese una esquina del 2do rectangulo:");
+        Coordenada e4= leerCoordenada(sc, "Ingrese la esquina opuesta del 2do rectangulo:");
 
         Rectangulo r1 = new Rectangulo(e1,e2);
         Rectangulo r2 = new Rectangulo(e3, e4);
@@ -35,7 +35,12 @@ public class Main {
 
         String resultado = Verificador.VerificarRelacion(r1, r2);
         System.err.println(resultado);
-        
 
+        Rectangulo interseccion = rectanguloSobre(r1, r2);
+        if (interseccion != null) {
+            System.out.println("Area de sobreposicion = " + interseccion.calculoArea());
+        }
+    sc.close();
+    }
 }
 
