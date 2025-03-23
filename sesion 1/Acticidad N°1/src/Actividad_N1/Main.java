@@ -26,8 +26,16 @@ public class Main {
         Coordenada e2= leerCoordenada(sc, "Ingrese la esquina opuesta del 1er rectángulo:");
         Coordenada e3= leerCoordenada(sc,"Ingrese una esquina del 2do rectángulo:");
         Coordenada e4= leerCoordenada(sc, "Ingrese la esquina opuesta del 2do rectángulo:");
-        
 
+        Rectangulo r1 = new Rectangulo(e1,e2);
+        Rectangulo r2 = new Rectangulo(e3, e4);
+
+        mostrarRectangulo(r1);
+        mostrarRectangulo(r2);
+
+        String resultado = Verificador.VerificarRelacion(r1, r2);
+        System.err.println(resultado);
+        
 
 }
 
