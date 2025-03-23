@@ -21,6 +21,8 @@ public class Verificador {
             return "Rectangulo a y b son disjuntos ";
         } else if (maximo_ax == minimo_bx || maximo_bx == minimo_ax || maximo_ay == minimo_by || maximo_by == minimo_ay ){
             return "Rectangulo a y b se juntan";
+        }else {
+            return "Rectangulo a y b se sobreponen";
         }
 
 
