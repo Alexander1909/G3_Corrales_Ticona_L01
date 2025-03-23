@@ -1,6 +1,5 @@
 import java.util.Scanner;
 public class Main {
-    public class Principal {
     public static Rectangulo rectanguloSobre(Rectangulo r1, Rectangulo r2) {
         double minX = Math.max(Math.min(r1.getEsquina1().getX(), r1.getEsquina2().getX()),
             Math.min(r2.getEsquina1().getX(), r2.getEsquina2().getX()));
@@ -24,8 +23,10 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         Coordenada e1= leerCoordenada(sc,"Ingrese una esquina del 1er rectangulo:");
-        Coordenada e2= leerCoordenada(sc, "Ingrese la esquina opuesta del 1er rectángulo:")
-    }
+        Coordenada e2= leerCoordenada(sc, "Ingrese la esquina opuesta del 1er rectángulo:");
+        Coordenada e3= leerCoordenada(sc,"Ingrese una esquina del 2do rectángulo:");
+        Coordenada e4= leerCoordenada(sc, "Ingrese la esquina opuesta del 2do rectángulo:");
+        
 
 
 }
