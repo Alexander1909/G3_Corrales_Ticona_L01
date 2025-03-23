@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class Rectangulo {
     private Coordenada esquina1;
@@ -18,6 +17,14 @@ public class Rectangulo {
     }
 
     public double calculoArea(){
-        double base =
+        double base =Math.abs(esquina2.getX() - esquina1.getX());
+        double altura=Math.abs(esquina2.getY() - esquina2.getY());
+        return base*altura;
     }
+
+    @Override
+    public String toString(){
+        return "Rectangulo = ( " + esquina1 + "," + esquina2 + ")";
+    }
+
 }
