@@ -17,7 +17,7 @@ public class Verificador {
         double minimo_by=Math.min(b1.getY(), b2.getY());
         double maximo_by=Math.max(b1.getY(), b2.getY());
 
-        if
+        if (maximo_ax < minimo_bx || maximo_bx < minimo_ax || maximo_ay < minimo_by || maximo_by < minimo_ay )
 
 
     }
